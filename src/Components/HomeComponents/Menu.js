@@ -5,10 +5,10 @@ import CartNavbar from '../MicroComponents/CartNavbar';
 
 const Menu = () => {
   return (
-    <>
+    <div className="menu">
     <AnouncementBanner/>
     <CartNavbar/>
-    </>
+    </div>
   )
 };
 

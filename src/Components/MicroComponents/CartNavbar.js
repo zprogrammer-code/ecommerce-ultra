@@ -1,10 +1,12 @@
 import React from 'react';
+import './CartNavbar.css';
+
 
 const CartNavbar = () => {
     
     return(
         <>
-        <div alt="cart-nav">
+        <nav className="cart-nav">
 
 	{/* ::before */}
 
@@ -18,8 +20,7 @@ const CartNavbar = () => {
 
          {/* ::before */}
 
-            <nav role="navigation">
-	            <div alt="navigation_container">
+	            
                     <ul>
                         <li className="nav-item">
                             <a  className="nav-link" href="#">
@@ -46,9 +47,9 @@ const CartNavbar = () => {
                             </a>
 	                    </li>
                     </ul>
-						</div>
+					
+               
                 </nav>
-                </div>
             </>
 
         )
