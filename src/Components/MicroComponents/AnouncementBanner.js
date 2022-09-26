@@ -1,11 +1,12 @@
 import React from "react";
+import './AnouncementBanner.css';
 
 
 
 const AnouncementBanner = () => {
     return (
         <>
-					<div role ="alert banner">
+					<div className ="alert-banner">
 						<div >
 	                        <button type="pill">
 		                        Anouncement

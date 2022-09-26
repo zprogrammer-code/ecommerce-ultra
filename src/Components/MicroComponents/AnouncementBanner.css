@@ -1,0 +1,6 @@
+.alert-banner{
+    height: var(--navbar-size);
+    background-color: var(--bg);
+   padding: 0 1rem;
+   border-bottom: var(--border);
+}
