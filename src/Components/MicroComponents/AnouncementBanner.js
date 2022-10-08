@@ -7,7 +7,7 @@ const AnouncementBanner = () => {
     return (
         <>
 					<div className ="alert-banner">
-						<div >
+						<div className="alert-content-container">
 	                        <button type="pill">
 		                        Anouncement
                             </button>

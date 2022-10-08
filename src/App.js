@@ -1,12 +1,10 @@
 // import logo from './logo.svg';
-import './App.css';
+import Menu from '/home/zprogrammercode/ecommerce-ultra/src/Components/HomeComponents/Menu.js';
 import React from 'react';
-import Menu from './Components/HomeComponents/Menu';
-function App() {
-  
+
+function App(){
+
    return( 
-   
-    
     <Menu/>
    )
 };

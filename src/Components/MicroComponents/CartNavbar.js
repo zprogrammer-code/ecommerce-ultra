@@ -4,67 +4,66 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';*/
 import './CartNavbar.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { House } from "react-bootstrap-icons";
+import { House, Telephone } from "react-bootstrap-icons";
 
 
 
 
 function CartNavbar() {
     
-    return(
-        <>
-        <nav className='cart-nav'>
-
-
-            
-
-            <div className='nav-content-container'>
-	            dd
-                    
-            <ul className='navbar-nav'>
-                    
-                    
-                    
-                    
-                   
-               
-
-
-                        
-                            <li className="nav-item">
-                                <a className="icon-button" href="#">
-                                     <House/>
-                                </a>
-                            </li>
-                         <NavItem icon="Shop"/>
-                            <NavItem icon="Donate"/>
-                            
-                        </ul>
+            return(       <>
+	            
+                             <Navbar>
+                                <NavItem>
+                                    <BrandLogo/>
+                                </NavItem>
+                                <NavItem>
+                                    House
+                                    <House/>
+                                </NavItem>
+                                <NavItem icon="Shop">
+                                    Shop
+                                    <Telephone/>
+                                </NavItem>
+                                <NavItem icon="Donate">
+                                    Donate
+                                </NavItem>
+                                <NavItem icon="Telephone">
+                                    Telephone
+                                </NavItem>
+                                <NavItem icon="Check-Out">
+                                    Check out
+                                </NavItem>
+                            </Navbar>
                 
-                        </div>
-        </nav>
-            </>
+                          </>
+                                )};
 
-        )
         function Navbar(props){
-            
-        }
-        function NavItem(props){
             return(
-                <li className="nav-item">
-                    <a href="#" className="icon-button" >
-                        {props.icon}
-                    </a>
-                </li>
-            )
-        }
+                <nav className='navbar'>
+                    <ul className='navbar-nav'>
+
+                    </ul>
+                </nav>      )};
+
+        
+        function NavItem(props){
+            
+            return(         
+                        <li className="nav-item">
+                            <a href="Ultra.com" className="icon-button" >
+                                 {props.icon}
+                            </a>
+                        </li>       )};
+
         function BrandLogo(props){
-            return(<span id="header-logo">
-            <a href="Ultra.com">
-                <img src="/home/zprogrammercode/ecommerce-ultra/src/Assets/Ultra-1 (1).png"/*{props.logo}*/ alt="brand"></img>
-            </a>
-        </span>
-        )}
-};
+            return(
+                    <div className="header-logo">
+                        <a href="Ultra.com" className='header-logo'>
+                            <img src="/home/zprogrammercode/ecommerce-ultra/src/Assets/Ultra-1 (1).png"/*{props.logo}*/ alt="brand"/>
+                        </a>
+                    </div>      )};
+
 
 export default CartNavbar
