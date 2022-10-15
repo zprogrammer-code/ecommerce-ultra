@@ -31,7 +31,7 @@
     margin: auto;
     padding-left: 15px;
     padding-right: 15px;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -42,12 +42,12 @@
     align-items: center;
 }
 
-.lower{
+/*.lower{
     display: block;
     justify-content:center;
     align-items: center;
     color: white;
-}
+}*/
 
 p {
 color: white;
