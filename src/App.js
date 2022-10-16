@@ -1,11 +1,15 @@
 // import logo from './logo.svg';
-import Menu from '/home/zprogrammercode/ecommerce-ultra/src/Components/HomeComponents/Menu.js';
+import AnouncementBanner from '/home/zprogrammercode/ecommerce-ultra/src/Components/MicroComponents/AnouncementBanner.js';
+import CartNavbar from '/home/zprogrammercode/ecommerce-ultra/src/Components/MicroComponents/CartNavbar.js';
 import React from 'react';
 
 function App(){
 
    return( 
-    <Menu/>
+      <>
+      <AnouncementBanner/>
+      <CartNavbar/>
+      </>
    )
 };
 

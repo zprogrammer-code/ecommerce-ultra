@@ -8,12 +8,13 @@ const AnouncementBanner = () => {
         <>
 					<div className ="alert-banner">
 						<div className="alert-content-container">
-	                        <button type="pill">
-		                        Anouncement
-                            </button>
-                            <p>
+                            <p className="lower">
 	                            How were responding to COVID-19
                             </p>
+                            <br></br>
+                            <button type="pill" className="upper">
+		                        Anouncement
+                            </button>
                         </div>
                     </div>
 
