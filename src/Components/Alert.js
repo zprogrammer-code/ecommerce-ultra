@@ -5,11 +5,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
  
-function Alert() {
+function CovidAlert() {
     return(
         <>
-            <Alert varient="dark">
+            <Alert varient="dark" className="d-flex align-items-center justify-content-center">
                 How we are respondoing to COVID-19
+                <br/>
                     <Button type="pill">
                         Anouncement
                     </Button>
@@ -18,4 +19,4 @@ function Alert() {
     )
 }
 
-export default Alert
+export default CovidAlert

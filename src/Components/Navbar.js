@@ -11,13 +11,13 @@ function UltraNavbar() {
     
     return(
         <>
-        <Navbar bg='primary' varient='dark'>
+        <Navbar bg='primary' varient='dark' className='navbar-nav'>
             <Container>   
                 
           <Navbar.Brand href="#home">
             <img
               alt=""
-              src="blob:chrome-untrusted://media-app/e5766784-f6be-476a-8bb2-be4cecb3865d"
+              src="/home/zprogrammercode/ecommerce-ultra/src/Assets/Ultra-1 (1).png"
               width="30"
               height="30"
               className="d-inline-block align-top"
@@ -27,7 +27,7 @@ function UltraNavbar() {
         
                     <Navbar.Toggle aria-controls='basic-navbar-nav'/>
                         <Navbar.Collapse id='basic-navbar-nav'>
-                            <Nav className='me-auto'>
+                            <Nav varient="tabs" className="justify-content-center">
                                 <Nav.Link href="#home">
                                     Home
                                 </Nav.Link>
