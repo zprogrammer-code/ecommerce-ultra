@@ -3,8 +3,7 @@ import CovidAlert from '/home/zprogrammercode/ecommerce-ultra/src/Components/Ale
 import UltraNavbar from '/home/zprogrammercode/ecommerce-ultra/src/Components/Navbar.js';
 import React from 'react';
 import HeroSection from './Components/HeroSection';
-
-
+import '/home/zprogrammercode/ecommerce-ultra/src/index.css';
 
 function App(){
 
@@ -12,7 +11,10 @@ function App(){
       <>
          <CovidAlert/>
          <UltraNavbar/>
+         <footer>
          <HeroSection/>
+            </footer>
+        
       </>
    )
 };

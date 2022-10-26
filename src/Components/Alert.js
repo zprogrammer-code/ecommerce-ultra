@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function CovidAlert() {
     return(
         <>
-            <Alert varient="dark" className="d-flex align-items-center justify-content-center">
+            <Alert varient="dark" className="d-flex align-items-center justify-content-center" href="/HeroSection2.js">
                 How we are respondoing to COVID-19
                 <br/>
                     <Button type="pill">

@@ -11,7 +11,7 @@ function UltraNavbar() {
     
     return(
         <>
-        <Navbar bg='primary' varient='dark' className='navbar-nav'>
+        <Navbar bg='primary' varient='dark' className='navbar-nav justify-content-center'>
             <Container>   
                 
           <Navbar.Brand href="#home">
@@ -27,8 +27,8 @@ function UltraNavbar() {
         
                     <Navbar.Toggle aria-controls='basic-navbar-nav'/>
                         <Navbar.Collapse id='basic-navbar-nav'>
-                            <Nav varient="tabs" className="justify-content-center">
-                                <Nav.Link href="#home">
+                            <Nav varient="tabs" className="justify-content-center Row">
+                                <Nav.Link href="#home" className="col">
                                     Home
                                 </Nav.Link>
                                 <NavDropdown title="Shop">
