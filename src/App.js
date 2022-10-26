@@ -1,20 +1,23 @@
-// import logo from './logo.svg';
-import CovidAlert from '/home/zprogrammercode/ecommerce-ultra/src/Components/Alert.js';
-import UltraNavbar from '/home/zprogrammercode/ecommerce-ultra/src/Components/Navbar.js';
+
 import React from 'react';
-import HeroSection from './Components/HeroSection';
+import { Routes, Route } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 import '/home/zprogrammercode/ecommerce-ultra/src/index.css';
+import HomePage from './Pages/Home';
+import Store from './Pages/Store';
+import ContactInfo from './Pages/Contact';
 
 function App(){
 
    return( 
       <>
-         <CovidAlert/>
-         <UltraNavbar/>
-         <footer>
-         <HeroSection/>
-            </footer>
-        
+      <Container>
+         <Routes>
+            <Route path="/" element={<HomePage/>}/>
+            <Route path="/" element={<Store/>}/>
+            <Route path="/" element={<ContactInfo/>}/>
+         </Routes>
+      </Container>
       </>
    )
 };
