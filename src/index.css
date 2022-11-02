@@ -34,10 +34,11 @@ code {
       text-decoration: none;
   }
 
+.hero_wrapper {
+  margin-top: 10px;
+  float: center;
+  margin-top: 0.25rem !important;
 
-
-.navbar-nav{
-  height: 80px;
 }
 
 

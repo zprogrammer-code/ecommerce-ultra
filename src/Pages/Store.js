@@ -1,12 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import UltraNavbar from './Navbar';
+import UltraNavbar from '/home/zprogrammercode/ecommerce-ultra/src/Components/Navbar.js';
 import CovidAlert from '/home/zprogrammercode/ecommerce-ultra/src/Components/Alert.js';
 import Accordian from '../Components/Accordian';
-import Pagination from '../Components/Pagination';
+import Pagination from '/home/zprogrammercode/ecommerce-ultra/src/Components/Pagination.js';
 
-function Store() {
+export function Store() {
     return(
         <> 
          <CovidAlert/>
@@ -17,4 +17,3 @@ function Store() {
     );
 };
 
-export default Store;

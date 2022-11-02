@@ -11,7 +11,7 @@ function UltraNavbar() {
     
     return(
         <>
-        <Navbar bg='primary' varient='dark' className='navbar-nav justify-content-center'>
+        <Navbar bg='primary' varient='dark' className='navbar-navv  '>
             <Container>   
                 
           <Navbar.Brand href="#home">
