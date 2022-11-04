@@ -5,7 +5,7 @@ import UltraNavbar from '/home/zprogrammercode/ecommerce-ultra/src/Components/Na
 import CovidAlert from '/home/zprogrammercode/ecommerce-ultra/src/Components/Alert.js';
 import HeroSection from '/home/zprogrammercode/ecommerce-ultra/src/Components/HeroSection.js';
 
-export function HomePage() {
+function HomePage() {
     return(
         <> 
          <CovidAlert/>
