@@ -7,7 +7,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-function UltraNavbar() {
+export function UltraNavbar() {
     
     return(
         <>
@@ -28,7 +28,7 @@ function UltraNavbar() {
                     <Navbar.Toggle aria-controls='basic-navbar-nav'/>
                         <Navbar.Collapse id='basic-navbar-nav'>
                             <Nav varient="tabs" className="justify-content-center Row">
-                                <Nav.Link href="#home" className="col">
+                                <Nav.Link href="Home" className="col">
                                     Home
                                 </Nav.Link>
                                 <NavDropdown title="Shop">
@@ -40,8 +40,10 @@ function UltraNavbar() {
                                         <NavDropdown.Item href="#/action-2">Mens Bottoms</NavDropdown.Item>
                                         <NavDropdown.Item href="#/action-3">Mens Shoes</NavDropdown.Item>
                                 </NavDropdown>
-                              
-                                <Nav.Link href="Donate">
+                                <Nav.Link href="Store">
+                                    Store
+                                </Nav.Link>
+                                <Nav.Link href="Store">
                                     Donate
                                 </Nav.Link>
                                 <Nav.Link href="Contact">
@@ -57,4 +59,3 @@ function UltraNavbar() {
         </>
     );
 };
-export default UltraNavbar

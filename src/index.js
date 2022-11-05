@@ -3,8 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom'; 
-import 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js';
-
 import './index.css';
 import App from './App';
 
@@ -14,11 +12,7 @@ root.render(
   
   <React.StrictMode>
   <BrowserRouter>
-          <Routes>
-              <Route path="/" element={<App/>}/>
-              <Route path="/Store" element={<Store />}/>
-              <Route path="/Contact" element={<ContactInfo />}/>
-          </Routes> 
+      <App/>
   </BrowserRouter>
   </React.StrictMode>
 );

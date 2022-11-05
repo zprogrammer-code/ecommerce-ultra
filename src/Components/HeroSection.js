@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 
 
-function HeroSection() {
+export function HeroSection() {
     return(
         <div className='mt-5'>
             
@@ -21,16 +21,3 @@ function HeroSection() {
     );
 };
 
-/*<div className= "hero_wrapper">
-<Card className="text-center" varient="light">            
-<Card.Body>
-<Card.Title> I love these outfits more every day</Card.Title>
-<Card.Text>
-    Our outfits and styles are personally selected by a head female and male stylist
-</Card.Text>
-<Button variant="primary">Shop Merch</Button>
-</Card.Body>
-</Card>
-</div>*/
-
-export default HeroSection
