@@ -4,16 +4,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { UltraNavbar } from '/home/zprogrammercode/ecommerce-ultra/src/Components/Navbar.js';
 import { CovidAlert } from '/home/zprogrammercode/ecommerce-ultra/src/Components/Alert.js';
 import { Accordian } from '/home/zprogrammercode/ecommerce-ultra/src/Components/Accordian.js';
-import { Pagination } from '/home/zprogrammercode/ecommerce-ultra/src/Components/Pagination.js';
+import { PageNavigation } from '/home/zprogrammercode/ecommerce-ultra/src/Components/Pagination.js';
+import { Container } from 'react-bootstrap';
 
 export function Store() {
     return(
         <> 
          <CovidAlert/>
          <UltraNavbar/>
-         <Accordian/>
-         <Pagination/>
+         <Container>
+            <Accordian/>
+            <PageNavigation/>
+         </Container>
         </>
     );
 };
 
+/*
+         <Accordian/>
+         <Pagination/>
+import { Accordian } from '/home/zprogrammercode/ecommerce-ultra/src/Components/Accordian.js';
+import { Pagination } from '/home/zprogrammercode/ecommerce-ultra/src/Components/Pagination.js';
+*/
