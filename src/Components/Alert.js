@@ -10,7 +10,7 @@ export function CovidAlert() {
     return(
         <>
             <Alert varient="dark" href="#">
-                <Container className='d-flex align-items-center justify-content-center  mr-5'> 
+                <Container className='d-flex align-items-center space-between mr-5'> 
                     we are respondoing to COVID-19
                     <Button type="pill">
                         Anouncement

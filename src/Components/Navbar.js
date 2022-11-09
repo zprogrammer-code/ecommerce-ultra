@@ -3,32 +3,39 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import React from 'react';
+import { Image } from 'react-bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { HouseHeartFill } from 'react-bootstrap-icons';
+
+
 
 
 export function UltraNavbar() {
     
     return(
         <>
-        <Navbar bg='primary' varient='dark' className='navbar-navv  '>
-            <Container>   
-                
-          <Navbar.Brand href="#home">
-            <img
-              alt=""
-              src="/home/zprogrammercode/ecommerce-ultra/src/Assets/Ultra-1 (1).png"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{' '}
-            Ultra
-          </Navbar.Brand>
-        
+        <Navbar bg='primary' varient='dark' className='navbar-nav'>
+          
+        <Container>       
+            <Navbar.Brand href="#home" className='logo'>
+                <Image
+                alt=""
+                src="/home/zprogrammercode/ecommerce-ultra/src/Assets/Ultra-1 (4).jpg"
+                className="d-inline-block align-top"
+                />{' '}
+                Ultra
+            </Navbar.Brand>
+         
                     <Navbar.Toggle aria-controls='basic-navbar-nav'/>
                         <Navbar.Collapse id='basic-navbar-nav'>
-                            <Nav varient="tabs" className="justify-content-center Row">
+                            <Nav varient="tabs" className="Row">
                                 <Nav.Link href="Home" className="col">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-heart-fill" viewBox="0 0 16 16">
+  <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z"/>
+  <path d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z"/>
+</svg>
                                     Home
                                 </Nav.Link>
                                 <NavDropdown title="Shop">
@@ -54,8 +61,11 @@ export function UltraNavbar() {
                                 </Nav.Link>
                             </Nav>
                         </Navbar.Collapse>                  
-            </Container>
+                        </Container>
         </Navbar>
         </>
     );
 };
+
+
+/*<HouseHeartFill/>*/

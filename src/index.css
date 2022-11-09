@@ -41,8 +41,9 @@ code {
 
 }
 
-
-Card {
-  background-color: transparent;
-  height:200px
+.navbar-nav{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
