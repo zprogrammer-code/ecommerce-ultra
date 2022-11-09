@@ -4,6 +4,19 @@
 }
 
 .logo{
-    width: auto;
-    height: auto;
+    height:33px;
+     width:120px;
 }
+
+.navbar-nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Alert-content-wrapper{
+    display:flex;
+     align-items: center;
+     justify-content: space-between;
+  }
