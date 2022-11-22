@@ -1,6 +1,8 @@
 .item-pic-size{
     height: 100px;
     width: 100px;
+    justify-content: space-between;
+
 }
 
 .logo{
@@ -8,15 +10,74 @@
      width:120px;
 }
 
-.navbar-nav{
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar-nav{   
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  padding: 0;
+  text-align: left;
+  background: none;
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
   }
 
-  .Alert-content-wrapper{
+
+  .anouncement-content-wrapper{
     display:flex;
      align-items: center;
      justify-content: space-between;
+     width:530px;
   }
+  
+  .alert-content-padding{
+    margin-right: 10px;
+  }
+
+  .hero_wrapper{
+
+    margin-top: 60px;
+    float: center;
+  
+  
+  }
+  
+  .HomePageContainer {
+    background-image : 'https://static.vecteezy.com/system/resources/previews/003/050/005/original/aesthetic-fashion-background-vector.jpg';    
+
+  }
+  .the-real-herosection-container{
+    display: block;
+    height: 1080px;
+    align-items: center;
+    justify-content: center;
+    background-image : 'https://static.vecteezy.com/system/resources/previews/003/050/005/original/aesthetic-fashion-background-vector.jpg';    
+    
+  }
+
+  .herosection-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-image : 'https://static.vecteezy.com/system/resources/previews/003/050/005/original/aesthetic-fashion-background-vector.jpg';    
+  }
+
+
+  .custom{
+    background-color: white;
+    border-color: white;
+    color: black;
+    padding: 0 0 0;
+  }
+
+
+  
+/*
+    display: flex;
+    justify-content: space-between;
+    align-items: center;*/

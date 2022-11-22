@@ -10,10 +10,10 @@ import "/home/zprogrammercode/ecommerce-ultra/src/Components/Components.css";
 export function CovidAlert() {
     return(
         <>
-            <Alert varient="dark" href="#">
-                <Container className='Alert-content-wrapper'> 
-                    we are respondoing to COVID-19
-                    <Button type="pill">
+            <Alert varient="dark" href="#" className='justify-content-space-between'>
+                <Container className='anouncement-content-wrapper'> 
+                   <h4> we are respondoing to COVID-19</h4>
+                    <Button type="pill" className='anouncementButton'>
                         Anouncement
                     </Button>
                 </Container>

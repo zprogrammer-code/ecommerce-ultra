@@ -4,7 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export function PageNavigation() {
-    <>
+    return(<>
 <Nav aria-label="Page navigation" className="flex-end">
     <ul class="pagination">
     <li>
@@ -24,7 +24,7 @@ export function PageNavigation() {
     </li>
     </ul>
 </Nav>
-    </>
+    </>);
 };
 
 /*
