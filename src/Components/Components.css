@@ -74,6 +74,15 @@
     color: black;
     padding: 0 0 0;
   }
+  
+  .searchComponentContainer{
+    background-color: black;
+  }
+
+  .searchComponentNavbar{
+    background-color: white;
+
+  }
 
 
   
