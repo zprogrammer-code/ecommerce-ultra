@@ -93,17 +93,3 @@ export function UltraNavbar() {
 };
 
 
-/*<HouseHeartFill/>
-
-                    <Navbar.Toggle aria-controls='basic-navbar-nav'/>
-                        <Navbar.Collapse id='basic-navbar-nav'>
-                        </Navbar.Collapse> 
-                        
-                           <Navbar.Brand href="#home" className='logo'>
-                <Image
-                alt=""
-                src="/home/zprogrammercode/ecommerce-ultra/src/Assets/Ultra-1 (4).jpg"
-                className="d-inline-block align-top"
-                />{' '}
-                Ultra
-            </Navbar.Brand>*/

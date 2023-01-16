@@ -1,26 +1,22 @@
 import axios from 'axios';
 import React, {useState, useEffect} from 'react';
 import { Input} from 'semantic-ui-react';
-import { Card } from 'semantic-ui-react';0
+import { Card } from 'semantic-ui-react';
+import { Form } from 'semantic-ui-react';
 import { Grid } from 'semantic-ui-react';
 import '/home/zprogrammercode/ecommerce-ultra/src/Components/Components.css';
 
-q    
-export default function MainSearch(){
+ 
+export function MainSearch(){
     const [APIData, setAPIData] = useState([]);
 
-    useEffect((){
+    useEffect(() => {
         axios.get('data.url')
         .than((response) => {
             setAPIData(response.data)
         });
     });
 
-    const initialState = {
-        loading: false,
-        results: [],
-        value: '',
-      }
 
     return(
         
@@ -34,12 +30,12 @@ export default function MainSearch(){
                 </div>
             </Grid.Row>
             <Grid.Column>
-            <form> 
+            <Form> 
                 <Input placeholder='Vape Make'/>
                 <Input placeholder='Vape Model'/>
                 <Input placeholder='E-Juice'/>
                 <Input placeholder='chargers and Apparal'/>
-            </form>
+            </Form>
             </Grid.Column>
             <Grid.Column>
         
@@ -64,3 +60,10 @@ export default function MainSearch(){
     
     );
 }
+
+
+/*const initialState = {
+    loading: false,
+    results: [],
+    value: '',
+  }*/
