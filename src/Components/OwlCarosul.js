@@ -6,13 +6,6 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 
 export default function NotoriousOwlCarousel(){
 
- 
-        const options = {
-          loop: true,
-          margin: 10,
-          items: 1,
-          autoplay: true
-        };
 
 return(
     <>
@@ -34,7 +27,9 @@ return(
                 <img src="assets/img/5.jpg" />
             </div>
       
-    </OwlCarousel>
+        </OwlCarousel>
 </>
-)
+);
 };
+
+
