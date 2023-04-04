@@ -1,9 +1,8 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+
+
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import React from 'react';
-import { Button, Image } from 'react-bootstrap';
+import { Navbar, Container, Button, Image } from 'react-bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "/home/zprogrammercode/ecommerce-ultra/src/Components/Components.css";
@@ -12,8 +11,7 @@ import "/home/zprogrammercode/ecommerce-ultra/src/Assets/Ultra-1 (4).jpg";
 
 
 
-
-export function UltraNavbar() {
+function UltraNavbar() {
    
     return(
         <>
@@ -28,7 +26,6 @@ export function UltraNavbar() {
                 />
                
       
-                            <Nav bg='white' className="col">
                                 <Button href="Home" className="custom row">
                                 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-heart-fill" viewBox="0 0 16 16">
@@ -84,7 +81,7 @@ export function UltraNavbar() {
 </svg>
                                     CheckOut
                             </Button>    
-                            </Nav>
+                          
                              
                         </Container>
         </Navbar>
@@ -92,4 +89,4 @@ export function UltraNavbar() {
     );
 };
 
-
+export default UltraNavbar

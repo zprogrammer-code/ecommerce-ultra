@@ -1,9 +1,6 @@
 import axios from 'axios';
 import React, {useState, useEffect} from 'react';
-import { Input} from 'semantic-ui-react';
-import { Card } from 'semantic-ui-react';
-import { Form } from 'semantic-ui-react';
-import { Grid } from 'semantic-ui-react';
+import { Input, Card, Form, Grid} from 'semantic-ui-react';
 import '/home/zprogrammercode/ecommerce-ultra/src/Components/Components.css';
 
  
@@ -59,7 +56,7 @@ export function MainSearch(){
         </Grid>
     
     );
-}
+};
 
 
 /*const initialState = {

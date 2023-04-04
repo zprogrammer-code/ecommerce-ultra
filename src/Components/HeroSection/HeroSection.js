@@ -6,7 +6,7 @@ import { Container, Button, Image } from 'react-bootstrap';
 
 
 
-export function HeroSection() {
+function HeroSection() {
     return(
         <>
         <div className='the-real-herosection-container'>
@@ -18,7 +18,7 @@ export function HeroSection() {
                 alt=""
                 src="/home/zprogrammercode/ecommerce-ultra/src/Assets/logo"
                 />
-                <h1> I love these outfits more every day</h1>
+                                <h1> I love these outfits more every day</h1>
                 <p>Our outfits and styles are personally selected by a head female and male stylist</p>
                 <Button href="Store" type='button' class="btn btn-primary">Shop Merch</Button>
             </div>
@@ -28,3 +28,4 @@ export function HeroSection() {
     );
 };
 
+export default HeroSection

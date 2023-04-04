@@ -7,13 +7,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "/home/zprogrammercode/ecommerce-ultra/src/Components/Components.css";
 
  
-export function CovidAlert() {
+function CovidAlert() {
     return(
         <>
-            <Alert varient="dark" href="#" className='justify-content-space-between'>
+            <Alert varient="dark" href="#">
                 <Container className='anouncement-content-wrapper'> 
-                   <h4> we are respondoing to COVID-19</h4>
-                    <Button type="pill" className='anouncementButton'>
+                   <h4 className='alert-content-padding'> we are respondoing to COVID-19</h4>
+                    <Button type="pill" >
                         Anouncement
                     </Button>
                 </Container>
@@ -22,3 +22,4 @@ export function CovidAlert() {
     )
 };
 
+export default CovidAlert
