@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "/home/zprogrammercode/ecommerce-ultra/src/Components/Components.css";
+import "/home/zprogrammercode/React_ecommerce_ultra/ecommerce-ultra/src/Components/Components.css";
 
  
 function CovidAlert() {

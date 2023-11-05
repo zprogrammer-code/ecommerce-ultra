@@ -2,11 +2,11 @@
 import React from 'react';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '/home/zprogrammercode/ecommerce-ultra/src/Components/Components.css';
+import '/home/zprogrammercode/React_ecommerce_ultra/ecommerce-ultra/src/Components/Components.css';
 import { Routes, Route } from 'react-router-dom';
-import HomePage from '/home/zprogrammercode/ecommerce-ultra/src/Pages/home.js';
-import Store from '/home/zprogrammercode/ecommerce-ultra/src/Pages/Store.js';
-import ContactPage from '/home/zprogrammercode/ecommerce-ultra/src/Pages/Contact.js';
+import HomePage from '/home/zprogrammercode/React_ecommerce_ultra/ecommerce-ultra/src/Pages/home.js';
+import Store from '/home/zprogrammercode/React_ecommerce_ultra/ecommerce-ultra/src/Pages/Store.js';
+import ContactPage from '/home/zprogrammercode/React_ecommerce_ultra/ecommerce-ultra/src/Pages/Contact.js';
 
 function App(){
 

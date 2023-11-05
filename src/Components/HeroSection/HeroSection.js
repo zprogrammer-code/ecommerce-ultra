@@ -1,5 +1,5 @@
 import React from 'react';
-import "/home/zprogrammercode/ecommerce-ultra/src/Components/Components.css";
+import "/home/zprogrammercode/React_ecommerce_ultra/ecommerce-ultra/src/Components/Components.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Button, Image } from 'react-bootstrap';
