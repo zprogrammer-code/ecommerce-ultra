@@ -1,7 +1,6 @@
 
-import React from 'react';
 
-function products(fail) {
+function Products(fail) {
     return new Promise((resolve, reject) => {
         setTimeout (() => {
             if (fail) {
@@ -14,10 +13,10 @@ function products(fail) {
                         {id: 2, name: "nike running", summary: "premiere classic look and model. PRICE: $125", pic: "holder.js/100px160" },
                         {id: 3, name: "nike chilling", summary: "premiere classic look and model. PRICE: $125", pic: "holder.js/100px160" }
                     ]
-                })
+                });
             }
-        })
-    })
+        }, 2000)
+    });
 };
 
-export default products;
+export default Products;
