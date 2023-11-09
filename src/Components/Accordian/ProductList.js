@@ -9,14 +9,15 @@ error ? <strong>{error}</strong> : null;
 const LoadingMessage = ({ loading }) =>
 loading ? <em>{loading}</em> : null;
 
-function ProductList ({ error, loading, products }) {
+function ProductCard ({ error, loading, product }) {
     return(
         <section>
             <ErrorMessage error={error} />
-            <LoadingMessage loading={loading} /> 
+            <LoadingMessage loading={loading} />  
                 <Container className='item-pic-size'>
-                    <Card style={{ width: '15rem' }} key={product.id} >
-                    <Card.Img variant="top" src="holder.js/100px160" />                        <Card.Body>
+                    <Card style={{ width: '15rem' }}>
+                    <Card.Img variant="top" src="holder.js/100px160" /> 
+                         <Card.Body>
                         <Card.Title>{product.name}</Card.Title>
                         <Card.Text >
                             {product.summary}
@@ -27,4 +28,4 @@ function ProductList ({ error, loading, products }) {
         </section>
     )};
 
-    export default ProductList;
+    export default ProductCard;
