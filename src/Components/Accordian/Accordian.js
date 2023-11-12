@@ -10,14 +10,8 @@ import ProductCard from '/home/zprogrammercode/React_ecommerce_ultra/ecommerce-u
 
 
 class Accordian extends React.Component {
-  products = [
-    {id: 0, name: "nike shox", summary: "premiere classic look and model. PRICE: $125", pic: "holder.js/100px160" },
-    {id: 1, name: "nike jordan", summary: "premiere classic look and model. PRICE: $125", pic: "holder.js/100px160" },
-    {id: 2, name: "nike running", summary: "premiere classic look and model. PRICE: $125", pic: "holder.js/100px160" },
-    {id: 3, name: "nike chilling", summary: "premiere classic look and model. PRICE: $125", pic: "holder.js/100px160" }
-]
 
-
+  
     state = {
       error: null,
       loading: "loading...",
@@ -39,18 +33,21 @@ class Accordian extends React.Component {
       );
     }
 
-  render(){ 
+  render(){  
+    return( <ProductCard {...this.state} />)
+    }
   
+  static getDerivedStateFromProps(props, state) {
+    return { ...state,
+    loding: state.products.length === 0 ? props.loading :
+    null,
+    };
+  }
+}
 
-    return(
-    
-              <ProductCard {...this.state} />
-            
-     
-    );
-      
-    
-  }};
+Accordian.defaultProps = {
+  loading: "loading...",
+};
 
   export default Accordian;
 

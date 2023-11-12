@@ -29,7 +29,7 @@ function ProductCard ({ error, loading, products }) {
                          <Card.Body>
                         <Card.Title>Sample product</Card.Title>
                         <Card.Text >
-                            This is where the description goes for the product. that will get retrieved through an api call.
+                            This is where the description goes for the product. that will get retrieved through an api call. Price: $125
                         </Card.Text>
                         </Card.Body>
                      </Card>
@@ -37,10 +37,7 @@ function ProductCard ({ error, loading, products }) {
             </Col>
              ))}
             </Row>
-            
-                   
-
-                   </>
+         </>
     )};
 
     export default ProductCard;
