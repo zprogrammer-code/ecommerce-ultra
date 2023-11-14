@@ -18,36 +18,36 @@ class Accordian extends React.Component {
       products: [],
     };
 
-    componentDidMount() {
+    /*componentDidMount() {
       Products().then(
         (result) => {
           this.setState({
             loading: null,
             error: null,
-            products: result.products,
+            products: result.products
           });
         },
         (error) => {
           this.setState({ loading: null, error });
         }
       );
-    }
+    }*/
 
   render(){  
     return( <ProductCard {...this.state} />)
     }
-  
-  static getDerivedStateFromProps(props, state) {
+};
+
+  export default Accordian;
+
+ /* static getDerivedStateFromProps(props, state) {
     return { ...state,
     loding: state.products.length === 0 ? props.loading :
     null,
     };
   }
-}
+};
 
 Accordian.defaultProps = {
   loading: "loading...",
-};
-
-  export default Accordian;
-
+};*/

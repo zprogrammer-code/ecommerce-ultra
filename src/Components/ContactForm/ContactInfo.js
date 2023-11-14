@@ -6,6 +6,12 @@ function ContactInfo() {
     return(
         <> 
        <h1> My info Dawg ! </h1>
+       <ul>
+        <li>Phone: 719-338-4333</li>
+        <li>Email: Zprogrammercode@gmail.com</li>
+        <li>Github: zprogrammer-code</li>
+        </ul>
+
         </>
     );
 };

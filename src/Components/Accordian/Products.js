@@ -1,7 +1,7 @@
 
 
 function Products(fail) {
-    return new Promise((resolve, reject) => {
+    new Promise((resolve, reject) => {
         setTimeout (() => {
             if (fail) {
                 reject("epic fail");

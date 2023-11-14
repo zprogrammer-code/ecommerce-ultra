@@ -27,9 +27,10 @@ function ProductCard ({ error, loading, products }) {
                     <Card className='product-card' >
                     <Card.Img variant="top"src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRcX9MOessS7zpD7QuN1WQihCVxk4uk42-JfG0kTIobTQZJJUiW7OwWYX6DcWUmYs7Jh3W1hCWjxjbAyZsp2AHk2sHzUgvhyDTHaib5aPF7C74_8QZvU98erw" /> 
                          <Card.Body>
-                        <Card.Title>Sample product</Card.Title>
+                        <Card.Title>Product title placeholder</Card.Title>
                         <Card.Text >
-                            This is where the description goes for the product. that will get retrieved through an api call. Price: $125
+                            This will be the product description, 
+                            The product summary and choice details and of course the price. PRICE: $125
                         </Card.Text>
                         </Card.Body>
                      </Card>
@@ -42,4 +43,5 @@ function ProductCard ({ error, loading, products }) {
 
     export default ProductCard;
 
-   /* xs={6} lg={4} */
+   /* xs={6} lg={4} 
+   https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRcX9MOessS7zpD7QuN1WQihCVxk4uk42-JfG0kTIobTQZJJUiW7OwWYX6DcWUmYs7Jh3W1hCWjxjbAyZsp2AHk2sHzUgvhyDTHaib5aPF7C74_8QZvU98erw*/
