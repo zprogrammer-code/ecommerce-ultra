@@ -10,7 +10,7 @@ import "/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Compone
 function CovidAlert() {
     return(
         <>
-            <Alert varient="dark" href="#">
+            <Alert varient="dark" href="#" className=" alert block-example border border-0 border-dark" >
                 <Container className='anouncement-content-wrapper'> 
                    <h4 className='alert-content-padding'> we are respondoing to COVID-19</h4>
                     <Button type="pill" >

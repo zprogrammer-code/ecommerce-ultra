@@ -1,9 +1,4 @@
-/*.item-pic-size{
-    height: 100px;
-    width: 100px;
-    justify-content: space-between;
 
-}*/
 
 .logo{
     height:33px;
@@ -11,15 +6,13 @@
 }
 
 .navbar-nav{   
-  position: relative;
   z-index: 2;
   display: flex;
   flex-direction: column;
   height: 70px;
   padding: 0;
   text-align: left;
-  background: none;
-  border: none;
+  background-color:white;
   border-radius: 0;
   -webkit-appearance: none;
   align-items: center;
@@ -27,14 +20,21 @@
   margin-bottom: 8px;
   }
 
-
+.custom-row{
+  -webkit-text-fill-color: black;
+  background-color:white;
+}
   .anouncement-content-wrapper{
     display:flex;
      align-items: center;
      justify-content: space-between;
      width:530px;
+  
   }
   
+  .alert{
+    background-color: grey;
+  }
   .alert-content-padding{
     margin-right: 10px;
   }
@@ -61,7 +61,7 @@
   .herosection-content{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;;
   
    }
 
@@ -84,4 +84,37 @@
     justify-content: space-between;
     align-items: center;
     width: 15rem;
+}
+
+.StoreContainer{
+  background-color:white;
+}
+
+.contact-title{
+  align-items: center;
+  margin-top: 30px;
+}
+
+
+
+.contactContainer{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.pagination{
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 500px;
+}
+
+.pagination-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
 }
