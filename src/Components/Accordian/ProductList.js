@@ -4,44 +4,58 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
+import Products from '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Components/Accordian/Products.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Components/Components.css';
 
 
-const ErrorMessage = ({ error }) =>
-error ? <strong>{error}</strong> : null;
 
-const LoadingMessage = ({ loading }) =>
-loading ? <em>{loading}</em> : null;
+class ProductCards extends React.Component {
 
-function ProductCard ({ error, loading, products }) {
-    return(
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            products: Products
+        }
+    }
+
+
+    render() {
+        const list = this.state.products
+        console.log(list)
+        return (
             <>
-            <ErrorMessage error={error} />
-            <LoadingMessage loading={loading} />  
+                <Row xs={6} lg={4} className="g-4 mt-5">
 
-            <Row xs={6} lg={4} className="g-4 mt-5">
-                       
-       {Array.from({ length: 12 }).map((___, idx) => ( 
-            <Col key={idx}>
-                <Container >
-                    <Card className='product-card block-example border border-0 border-dark' >
-                    <Card.Img variant="top"src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRcX9MOessS7zpD7QuN1WQihCVxk4uk42-JfG0kTIobTQZJJUiW7OwWYX6DcWUmYs7Jh3W1hCWjxjbAyZsp2AHk2sHzUgvhyDTHaib5aPF7C74_8QZvU98erw" /> 
-                         <Card.Body>
-                        <Card.Title>Product title placeholder</Card.Title>
-                        <Card.Text >
-                            This will be the product description, 
-                            The product summary and choice details and of course the price. PRICE: $125
-                        </Card.Text>
-                        </Card.Body>
-                     </Card>
-                 </Container>
-            </Col>
-             ))}
-            </Row>
-         </>
-    )};
+                    {list.map((product) => (
+                        <Col>
+                            <Container >
+                                <Card className='product-card block-example border border-0 border-dark' >
+                                    <Card.Img variant="top" src={product.pic} />
+                                    <Card.Body>
+                                        <Card.Title>{product.name}</Card.Title>
+                                        <Card.Text >
+                                            {product.summary}
+                                            <h3>PRICE: {product.price}</h3>
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Container>
+                        </Col>
+                    ))}
 
-    export default ProductCard;
+                </Row>
+            </>
+        )
+    };
 
-   /* xs={6} lg={4} 
-   https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRcX9MOessS7zpD7QuN1WQihCVxk4uk42-JfG0kTIobTQZJJUiW7OwWYX6DcWUmYs7Jh3W1hCWjxjbAyZsp2AHk2sHzUgvhyDTHaib5aPF7C74_8QZvU98erw*/
+}
+
+export default ProductCards;
+
+/* xs={6} lg={4}
+              {Array.from({ length: 12 }).map((product, idx) => (
+                        <Col key={idx}>
+https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRcX9MOessS7zpD7QuN1WQihCVxk4uk42-JfG0kTIobTQZJJUiW7OwWYX6DcWUmYs7Jh3W1hCWjxjbAyZsp2AHk2sHzUgvhyDTHaib5aPF7C74_8QZvU98erw*/
