@@ -2,7 +2,7 @@
 
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import React from 'react';
-import { Navbar, Container, Button, Image } from 'react-bootstrap';
+import { Navbar, Container, Button } from 'react-bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Components/Components.css";
@@ -19,12 +19,7 @@ function UltraNavbar() {
           
         <Container>   
        
-                <Image
-                alt=""
-                src="/home/zprogrammercode/ecommerce-ultra/src/Assets/Ultra-1 (4).jpg"
-                className="d-inline-block align-top"
-                />
-               
+               <a href="/home"><h1>ULTRA</h1></a>
       
                                 <Button href="Home" className="custom row">
                                 
@@ -90,3 +85,10 @@ function UltraNavbar() {
 };
 
 export default UltraNavbar
+
+
+                /*<Image
+                alt="logo"
+                src="src/Assets/ultra-1.png"
+                className="d-inline-block align-top"
+                />*/
