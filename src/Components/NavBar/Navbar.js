@@ -5,8 +5,8 @@ import React from 'react';
 import { Navbar, Container, Button, Image } from 'react-bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "/home/zprogrammercode/React_ecommerce_ultra/ecommerce-ultra/src/Components/Components.css";
-import "/home/zprogrammercode/React_ecommerce_ultra/ecommerce-ultra/src/Assets/Ultra-1 (4).jpg";
+import "/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Components/Components.css";
+import "/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Assets/Ultra-1 (4).jpg";
 
 
 

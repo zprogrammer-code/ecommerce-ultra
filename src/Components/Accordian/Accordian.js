@@ -2,8 +2,8 @@
 import React from 'react';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Products from '/home/zprogrammercode/React_ecommerce_ultra/ecommerce-ultra/src/Components/Accordian/Products.js';
-import ProductCard from '/home/zprogrammercode/React_ecommerce_ultra/ecommerce-ultra/src/Components/Accordian/ProductList.js';
+/*import Products from '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Components/Accordian/Products.js';*/
+import ProductCard from '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Components/Accordian/ProductList.js';
 
 
 

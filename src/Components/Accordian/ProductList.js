@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import '/home/zprogrammercode/React_ecommerce_ultra/ecommerce-ultra/src/Components/Components.css';
+import '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Components/Components.css';
 
 
 const ErrorMessage = ({ error }) =>
