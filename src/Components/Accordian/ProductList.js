@@ -27,13 +27,13 @@ class ProductCards extends React.Component {
         console.log(list)
         return (
             <>
-                <Row xs={6} lg={4} className="g-4 mt-5">
+                <Row xs={6} lg={4} className="product-section g-4 mt-6">
 
                     {list.map((product) => (
                         <Col>
                             <Container >
                                 <Card className='product-card block-example border border-0 border-dark' >
-                                    <Card.Img variant="top" src={product.pic} />
+                                    <Card.Img variant="top" src={product.pic} className='image-zoom'/>
                                     <Card.Body>
                                         <Card.Title>{product.name}</Card.Title>
                                         <Card.Text >

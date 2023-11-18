@@ -78,13 +78,6 @@
     background-image : url(https://images.vans.com/is/image/Vans/VN0A5JIV_BRR_ALT2?wid=1600&hei=1984&fmt=jpeg&qlt=90&resMode=sharp2&op_usm=0.9,1.7,8,0);    
 
   }
-  
-.product-card{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 15rem;
-}
 
 .StoreContainer{
   background-color:white;
@@ -116,5 +109,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
+}
+
+.product-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15rem;
+}
+
+.product-card:hover{
+  transform: scale(1.5);
+}
+
+.image-zoom{
+    padding: 10px;
+    background-color: grey;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.product-section{
+  padding:30px;
+  margin: 40px;
 }
