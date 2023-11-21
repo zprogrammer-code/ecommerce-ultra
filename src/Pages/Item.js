@@ -11,7 +11,7 @@ function Item() {
 
     return(
         <>
-        <div className='StoreContainer'> 
+        <div className='ItemContainer'> 
              <CovidAlert/>
             <UltraNavbar/>
             <PageNavigation/>

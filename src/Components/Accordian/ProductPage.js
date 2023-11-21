@@ -18,6 +18,7 @@ class ProductPage extends React.Component {
 
     render(){
         const daProducts = this.state.products
+        console.log(daProducts)
         return(
             <>
             {daProducts.map((product) => (
