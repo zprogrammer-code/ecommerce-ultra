@@ -10,7 +10,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Components/Components.css';
 
 
-
 class ProductCards extends React.Component {
 
     constructor(props) {
@@ -23,6 +22,12 @@ class ProductCards extends React.Component {
 
 
     render() {
+        
+        function handleClick(e) {
+            e.preventDefault();
+            console.log('The link was clicked.');
+          }
+
         const list = this.state.products
         console.log(list)
         return (
@@ -31,7 +36,9 @@ class ProductCards extends React.Component {
 
                     {list.map((product) => (
                         <Col>
+                            
                             <Container >
+                                <Card.Link to="Item" onClick={handleClick}>
                                 <Card className='product-card block-example border border-0 border-dark' >
                                     <Card.Img variant="top" src={product.pic} className='image-zoom'/>
                                     <Card.Body>
@@ -42,7 +49,10 @@ class ProductCards extends React.Component {
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
+                                </Card.Link>
                             </Container>
+                            
+                           
                         </Col>
                     ))}
 

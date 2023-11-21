@@ -123,11 +123,11 @@
 }
 
 .image-zoom{
-    padding: 10px;
-    background-color: grey;
+   /* padding: 2px;
+   background-color: grey;*/
     transition: transform .2s;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: 0 auto;
 }
 
