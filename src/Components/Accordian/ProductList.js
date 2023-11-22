@@ -24,13 +24,6 @@ class ProductCards extends React.Component {
 
 
     render() {
-    
-
-        function handleClick(e) {
-            e.preventDefault();
-            console.log('The link was clicked.');
-            
-          }
 
         const list = this.state.products
         console.log(list);
@@ -44,7 +37,9 @@ class ProductCards extends React.Component {
                             
                             <Container>
                                 <Card className='product-card block-example border border-0 border-dark' >
+                                   <a href="Item">
                                     <Card.Img variant="top" src={product.pic} className='image-zoom'/>
+                                   </a>
                                     <Card.Body>
                                         <Card.Title>{product.name}</Card.Title>
                                         <Card.Text >
