@@ -25,7 +25,7 @@ class ProductCards extends React.Component {
 
 
     render() {
-
+        
         const list = this.state.products
         console.log(list);
 
@@ -35,10 +35,10 @@ class ProductCards extends React.Component {
 
                     {list.map((product) => (
                         <Col>
-                            
+                        
                             <Container>
                                 <Card key={product.id} className='product-card block-example border border-0 border-dark' >
-                                 <Link to={`/ProductPage/${product.id}`} state={{ product }} > 
+                                 <Link to={`/ProductPage/${product.id}`} state={{products: list}}> 
                                     <Card.Img variant="top" src={product.pic} className='image-zoom'/>
                                  
                                     <Card.Body>
@@ -52,7 +52,7 @@ class ProductCards extends React.Component {
                                 </Card>
                             </Container>
                         </Col>
-                    ))}
+    ))}
 
                 </Row>
             </>
@@ -63,7 +63,3 @@ class ProductCards extends React.Component {
 
 export default ProductCards;
 
-/* xs={6} lg={4}
-              {Array.from({ length: 12 }).map((product, idx) => (
-                        <Col key={idx}>
-https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRcX9MOessS7zpD7QuN1WQihCVxk4uk42-JfG0kTIobTQZJJUiW7OwWYX6DcWUmYs7Jh3W1hCWjxjbAyZsp2AHk2sHzUgvhyDTHaib5aPF7C74_8QZvU98erw*/

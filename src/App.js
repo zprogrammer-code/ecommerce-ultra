@@ -7,7 +7,8 @@ import '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Compone
 import HomePage from '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Pages/home.js';
 import Store from '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Pages/Store.js';
 import ContactPage from '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Pages/Contact.js';
-import Item from './Pages/Item';
+import Product from './Pages/Product';
+import ProductPage from './Components/Accordian/ProductPage';
 
 function App(){
 
@@ -18,7 +19,8 @@ function App(){
             <Route path="/Home" element={<HomePage/>}/>
             <Route path="/Store" element={<Store/>}/>
             <Route path="/Contact" element={<ContactPage/>}/>
-            <Route path="/Item" element={<Item/>}/>
+            <Route path="/Product" element={<Product/>}/>
+            <Route path='/ProductPage/:id' component={<ProductPage/>}/>
          </Routes>   
      
       </> 
