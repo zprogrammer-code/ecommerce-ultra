@@ -8,8 +8,7 @@ import HomePage from '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ult
 import Store from '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Pages/Store.js';
 import ContactPage from '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Pages/Contact.js';
 import Product from './Pages/Product';
-import ProductPage from './Components/Accordian/ProductPage';
-
+import ProductView from './Components/Accordian/ProductView';
 function App(){
 
    return( 
@@ -20,7 +19,7 @@ function App(){
             <Route path="/Store" element={<Store/>}/>
             <Route path="/Contact" element={<ContactPage/>}/>
             <Route path="/Product" element={<Product/>}/>
-            <Route path='/ProductPage/:id' component={<ProductPage/>}/>
+            <Route path='/ProductView/:id' element={<ProductView/>}/>
          </Routes>   
      
       </> 

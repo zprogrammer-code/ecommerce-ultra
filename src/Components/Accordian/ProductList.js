@@ -8,7 +8,7 @@ import Products from '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ult
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Components/Components.css';
-import { Link } from 'react-router-dom';
+import { Link  } from 'react-router-dom';
 
 
 
@@ -38,7 +38,7 @@ class ProductCards extends React.Component {
                         
                             <Container>
                                 <Card key={product.id} className='product-card block-example border border-0 border-dark' >
-                                 <Link to={`/ProductPage/${product.id}`} state={{products: list}}> 
+                                 <Link to={`/ProductView/${product.id}`} > 
                                     <Card.Img variant="top" src={product.pic} className='image-zoom'/>
                                  
                                     <Card.Body>
