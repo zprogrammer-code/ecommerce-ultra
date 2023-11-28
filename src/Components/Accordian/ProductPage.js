@@ -1,34 +1,71 @@
-import React, { useState } from 'react';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Components/Components.css';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Products from './Products';
 
 
-const ProductPage = (props) => { 
-    const {id: productId} = useParams();
-    const [products, setProducts] = useState({})
+
+const useProductPage = () => { 
+    const [product, setProduct] = useState({})
     const [selectedSize, setSelectedSize] = useState("");
-    const [selectedQuanity, setSelectedQuanity] = useState(1);
+    const [selectedQuantity, setSelectedQuantity] = useState(1);
 
     const handleQuanityChange = ({target:{value}}) => {
-        setSelectedQuanity(value)
+        setSelectedQuantity(value);
     }
-  console.log(this.state);
-            this.state = {
-                product: this.props.location.query.products
-            }
+
+    useEffect(() => {
+    Products.then(product => {
+        setProduct(product);
+      });
+    }, [product]);
+
+ useEffect(() => {
+    if (product && product.attributes) {
+        const { attributes } = product;
+    setSelectedSize(attributes.sizes[0].name);
+  }
+ }, [product, setSelectedSize]);
+
+
+
+ 
+ return {
+    product,
+    selectedSize,
+    selectedQuantity,
+    setSelectedSize,
+    handleQuanityChange
+         }
         
-            console.log(this.state);
-        
-      
-        return (
-          <div>
-       <h1>working</h1>
-          </div>
-        )
         }
 
 
 
-export default ProductPage;
+export default useProductPage;
+
+
+
+ /*const getImage = (colour) => {
+    const { attributes } = product;
+    const image = attributes.images.data.find((image) =>
+        image.attributes.name.includes(colour)
+        ); 
+        return image.attributes.url || "";
+ };*/
+
+ /*     const {id: productId} = useParams();
+ 
+ 
+ useEffect(() => {
+ const fetchCategories = async () => {
+    try {
+        const {data: { data },} = await axios.get('');
+        setProduct(data);
+        } catch (error) {
+        console.log({error});
+    }
+};
+    if(productId) {
+        fetchCategories();
+    }
+ },[productId]);   */  
