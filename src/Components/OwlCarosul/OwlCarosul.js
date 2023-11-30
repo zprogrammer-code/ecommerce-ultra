@@ -1,37 +1,36 @@
-import React from 'react';
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+import Carousel from 'react-bootstrap/Carousel';
+import ExampleCarouselImage from 'components/ExampleCarouselImage';
 
-
-function NotoriousOwlCarousel(){
-
-
-return(
+function OwlCarousel() {
+  return (
     <>
-        <OwlCarousel className="owl-theme" loop margin={10} nav>
-        
-            <div class="item">
-                <img src="assets/img/1.jpg" alt=""/>
-            </div>
-            <div class="item">
-                <img src="assets/img/2.jpg" alt=""/>
-            </div>
-            <div class="item">
-                <img src="assets/img/3.jpg"  alt=""/>
-            </div>
-            <div class="item">
-                <img src="assets/img/4.jpg" alt=""/>
-            </div>
-            <div class="item">
-                <img src="assets/img/5.jpg" alt=""/>
-            </div>
-      
-        </OwlCarousel>
-</>
-);
-};
+    <Carousel>
+      <Carousel.Item>
+        <ExampleCarouselImage text="First slide" />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <ExampleCarouselImage text="Second slide" />
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <ExampleCarouselImage text="Third slide" />
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+    </>
+  );
+}
 
-export default NotoriousOwlCarousel
-
-
+export default OwlCarousel;

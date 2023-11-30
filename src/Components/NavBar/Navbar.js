@@ -21,7 +21,7 @@ function UltraNavbar() {
        
                <a href="/home"><h1>ULTRA</h1></a>
       
-                                <Button href="Home" className=" custom-row block-example border border-0 border-dark" variant="outline-dark">
+                                <Button href="/Home" className=" custom-row block-example border border-0 border-dark" variant="outline-dark">
                                 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-house-heart-fill" viewBox="0 0 16 16">
   <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z"/>
@@ -35,7 +35,7 @@ function UltraNavbar() {
   <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
 </svg>
 
-                                <NavDropdown title="Shop" id="collapsible-nav-dropdown" >
+                                <NavDropdown title="/Shop" id="collapsible-nav-dropdown" >
                                         <NavDropdown.Item href="#/action-1">Womens Tops</NavDropdown.Item>
                                         <NavDropdown.Item href="#/action-2">Womens Bottoms</NavDropdown.Item>
                                         <NavDropdown.Item href="#/action-3">Womens Shoes</NavDropdown.Item>
@@ -45,7 +45,7 @@ function UltraNavbar() {
                                         <NavDropdown.Item href="#/action-3">Mens Shoes</NavDropdown.Item>
                                 </NavDropdown>
                               </Button>
-                                <Button href="Store" className=" custom-row block-example border border-0 border-dark" variant="outline-dark">
+                                <Button href="/Store" className=" custom-row block-example border border-0 border-dark" variant="outline-dark">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-house-down-fill" viewBox="0 0 16 16">
   <path d="M12.5 9a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Zm.354 5.854 1.5-1.5a.5.5 0 0 0-.708-.707l-.646.646V10.5a.5.5 0 0 0-1 0v2.793l-.646-.646a.5.5 0 0 0-.708.707l1.5 1.5a.5.5 0 0 0 .708 0Z"/>
@@ -54,7 +54,7 @@ function UltraNavbar() {
 </svg>
                                     Store
                                 </Button>
-                                <Button href="Donate" className=" custom-row block-example border border-0 border-dark" variant="outline-dark">
+                                <Button href="/Donate" className=" custom-row block-example border border-0 border-dark" variant="outline-dark">
 
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-house-down-fill" viewBox="0 0 16 16">
   <path d="M12.5 9a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Zm.354 5.854 1.5-1.5a.5.5 0 0 0-.708-.707l-.646.646V10.5a.5.5 0 0 0-1 0v2.793l-.646-.646a.5.5 0 0 0-.708.707l1.5 1.5a.5.5 0 0 0 .708 0Z"/>
@@ -63,14 +63,14 @@ function UltraNavbar() {
 </svg>
                                     Donate
                                 </Button>
-                                <Button href="Contact" className=" custom-row block-example border border-0 border-dark" variant="outline-dark">
+                                <Button href="/Contact" className=" custom-row block-example border border-0 border-dark" variant="outline-dark">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-telephone-fill" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
 </svg>
                                     Contact
                                 </Button>
-                                <Button href="CheckOut" className=" custom-row block-example border border-0 border-dark" variant="outline-dark">
+                                <Button href="/CheckOut" className=" custom-row block-example border border-0 border-dark" variant="outline-dark">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-cart-fill" viewBox="0 0 16 16">
   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
 </svg>

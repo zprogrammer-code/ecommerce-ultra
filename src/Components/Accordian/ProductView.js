@@ -65,6 +65,7 @@ const ProductView = () =>  {
                     </Row>
 
                 </Card>
+             
                 </div>
                 <PageNavigation/>
                 </div>
