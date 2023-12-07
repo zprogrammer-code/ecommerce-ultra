@@ -4,11 +4,13 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from 'react-router-dom';
 import '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Components/Components.css';
-import HomePage from '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Pages/home.js';
+import HomePage from '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Pages/Home.js';
 import Store from '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Pages/Store.js';
 import ContactPage from '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Pages/Contact.js';
 import Product from './Pages/Product';
 import ProductView from './Components/Accordian/ProductView';
+import Donate from './Pages/Donate';
+
 function App(){
 
    return( 
@@ -19,6 +21,8 @@ function App(){
             <Route path="/Store" element={<Store/>}/>
             <Route path="/Contact" element={<ContactPage/>}/>
             <Route path="/Product" element={<Product/>}/>
+            <Route path="/Donate" element={<Donate/>}/>
+
             <Route path='/ProductView/:id' element={<ProductView/>}/>
          </Routes>   
      
