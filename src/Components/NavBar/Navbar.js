@@ -36,12 +36,11 @@ function UltraNavbar() {
 </svg>
 
                                 <NavDropdown title="/Shop" id="collapsible-nav-dropdown" >
-                                        <NavDropdown.Item href="#/action-1">Womens Tops</NavDropdown.Item>
-                                        <NavDropdown.Item href="#/action-2">Womens Bottoms</NavDropdown.Item>
                                         <NavDropdown.Item href="#/action-3">Womens Shoes</NavDropdown.Item>
+                                        <NavDropdown.Item href="#/action-3">fixed/built tech</NavDropdown.Item>
+
                                         <NavDropdown.Divider/>
                                         <NavDropdown.Item href="#/action-1">Mens Tops</NavDropdown.Item>
-                                        <NavDropdown.Item href="#/action-2">Mens Bottoms</NavDropdown.Item>
                                         <NavDropdown.Item href="#/action-3">Mens Shoes</NavDropdown.Item>
                                 </NavDropdown>
                               </Button>
