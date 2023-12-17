@@ -10,10 +10,11 @@ import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 
 import productsReducer, { productsFetch } from './Features/productsSlice';
-
+import { productsApi } from './Features/productsApi';
 const store = configureStore({
   reducer: {
     products: productsReducer,
+    [productsApi.reducerPath]
   },
 });
 
