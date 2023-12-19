@@ -1,6 +1,5 @@
 
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
@@ -10,6 +9,8 @@ import '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Compone
 import { Link  } from 'react-router-dom';
 import { useGetAllProductsQuery } from '../../Features/productsApi';
 import { Button } from 'react-bootstrap';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../../Features/cartSlice';
 
 
 
@@ -18,8 +19,12 @@ const ProductCards = () => {
 
   
         const { data, error, isLoading } = useGetAllProductsQuery();
+        const dispatch = useDispatch();
 
-     
+        const handleAddToCart = (product) => {
+                
+            dispatch(addToCart(product));
+        }
     
 
 
@@ -42,22 +47,24 @@ const ProductCards = () => {
                     {data.map((product) => (
                         <Col>
                         
-                            <Container>
-                                <Card key={product.id} className='product-card block-example border border-0 border-dark' >
+                           
+                                <Card key={product.id} className='product-card' >
                                  <Link to={`/ProductView/${product.id}`} > 
                                     <Card.Img variant="top" src={product.pic} className='image-zoom'/>
                                  
                                     <Card.Body>
-                                        <Card.Title>{product.name}</Card.Title>
-                                        <Card.Text >
-                                            {product.summary}
-                                            <h3>PRICE: {product.price}</h3>
+                                        <Card.Title className='card-title'>{product.name}</Card.Title>
+                                        <Card.Text className='card-details' >
+                                            {product.short}
+                                            <h4> {product.price}</h4>
                                         </Card.Text>
                                     </Card.Body>
                                     </Link>
-                                    <Button varient="primary">Add To Cart</Button>
+                                    <Button className='card-button' varient="primary" onClick={() => handleAddToCart(product)}>
+                                        Add To Cart
+                                        </Button>
                                 </Card>
-                            </Container>
+                          
                         </Col>
     ))}
 

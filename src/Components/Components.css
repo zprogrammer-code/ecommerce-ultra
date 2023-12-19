@@ -1,4 +1,4 @@
-
+/*navbar*/
 
 .logo{
     height:33px;
@@ -18,12 +18,40 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 8px;
+  position: relative;
   }
 
 .custom-row{
   -webkit-text-fill-color: black;
   background-color:white;
+ 
+
 }
+
+#dropdown{
+  position: fixed;
+}
+
+.bag-quantity{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: orange;
+  border-radius: 450%;
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 5px;
+}
+
+
+/*navbar*/
+
+
+
+/*alert*/
+
   .anouncement-content-wrapper{
     display:flex;
      align-items: center;
@@ -38,6 +66,11 @@
   .alert-content-padding{
     margin-right: 10px;
   }
+
+/*alert^*/
+
+
+/*herosection*/
 
   .hero_wrapper{
 
@@ -65,23 +98,15 @@
   
    }
 
-  .searchComponentContainer{
-    background-color: black;
-  }
-
-  .searchComponentNavbar{
-    background-color: white;
-
-  }
+ /*herosection*/
 
   .HomePageContainer{
     background-image : url(https://images.vans.com/is/image/Vans/VN0A5JIV_BRR_ALT2?wid=1600&hei=1984&fmt=jpeg&qlt=90&resMode=sharp2&op_usm=0.9,1.7,8,0);    
 
   }
 
-.StoreContainer{
-  background-color:white;
-}
+
+/*contactpage*/
 
 .contact-title{
   align-items: center;
@@ -99,6 +124,8 @@
   margin-bottom: 30px;
 }
 
+/*contactpage^*/
+
 .pagination{
   justify-content: space-between;
   align-items: center;
@@ -111,31 +138,78 @@
   align-items: center;
 }
 
+
+/*store*/
+
+.StoreContainer{
+  background-color:white;
+}
+ 
 .product-card{
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;  
   margin-bottom: 100px;
-  width: 15rem;
+  width: 320px;
+  height: 470px;
+  border-radius: 15px;
+  box-shadow: -15px -15px 20px rgba(255, 255, 255, 0.5), 6px 6px 15px rgba(94, 104, 121, 0.3);
 }
 
+.card-button{
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 1.15px;
+}
 .product-card:hover{
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 
 .image-zoom{
     padding: 2px;
-   background-color: grey;
-    transition: transform .2s;
-    width: 250px;
-    height: 250px;
+    transition: transform .3s;
+    width: 260px;
+    height: 260px;
     margin: 0 auto;
+    zoom: 1;
 }
 
 .product-section{
   padding:30px;
   margin: 20px;
 }
+
+.productContainer h2 {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 30px;
+} 
+
+.card-title{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.card-details{
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 18px;
+font-weight: 500;
+}
+
+/*store^*/
+
+/*productview*/
 
 .product-details{
   width:500px;
@@ -147,29 +221,15 @@
   margin-top: 30px;
 }
 
-.image-card-placing{
-  display:flex;
-  flex-direction: column;
-  margin-top: 50px;
-}
+
+
 
 .owlCarousel{
   background-color: black;
   height: 800px;
 }
 
-.bag-quantity{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background: orange;
-  border-radius: 450%;
-  font-size: 14px;
-  font-weight: 700;
-  color: black;
-  margin-bottom: 5px;
-}
+
 
 .not-found{
   display: flex;
@@ -181,9 +241,4 @@
 
 }
 
-.productContainer h2 {
-  font-size: 40px;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 30px;
-}
+
