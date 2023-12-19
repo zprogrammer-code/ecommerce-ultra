@@ -11,11 +11,14 @@ import { Provider } from "react-redux";
 
 import productsReducer, { productsFetch } from './Features/productsSlice';
 import { productsApi } from './Features/productsApi';
+
 const store = configureStore({
   reducer: {
     products: productsReducer,
-    [productsApi.reducerPath]
+    [productsApi.reducerPath]: productsApi.reducer,
   },
+  middleware: (getDefaultMiddleware) => 
+   getDefaultMiddleware().concat(productsApi.middleware),
 });
 
 store.dispatch(productsFetch());

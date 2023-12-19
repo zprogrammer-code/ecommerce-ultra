@@ -11,8 +11,12 @@ import Product from './Pages/Product';
 import ProductView from './Components/Accordian/ProductView';
 import Donate from './Pages/Donate';
 import NotFound from './Components/Notfound';
+import { useGetAllProductsQuery } from './Features/productsApi';
+
+
 
 function App(){
+   const { data, error, isloading } = useGetAllProductsQuery
 
    return( 
             <>

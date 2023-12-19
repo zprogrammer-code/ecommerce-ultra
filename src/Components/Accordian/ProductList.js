@@ -4,36 +4,40 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import Products from '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Components/Accordian/Products.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Components/Components.css';
 import { Link  } from 'react-router-dom';
+import { useGetAllProductsQuery } from '../../Features/productsApi';
 
 
 
 
-class ProductCards extends React.Component {
+const ProductCards = () => {
 
-    constructor(props) {
-        super(props);
+  
+        const { data, error, isLoading } = useGetAllProductsQuery();
 
-        this.state = {
-            products: Products
-        }
-    }
+     
+    
 
 
-    render() {
+   
         
-        const list = this.state.products
-        console.log(list);
+       
+        console.log({data});
 
         return (
-            <>
+            <div className='productContainer'>
+                {isLoading ? (
+                    <p>Loading...</p>
+                ) : error ? (
+                    <p>An error occured..</p>
+                ) : (
+                    <>
                 <Row xs={6} lg={4} className="product-section g-4 mt-6">
 
-                    {list.map((product) => (
+                    {data.map((product) => (
                         <Col>
                         
                             <Container>
@@ -55,11 +59,13 @@ class ProductCards extends React.Component {
     ))}
 
                 </Row>
-            </>
+                </>
+                )}
+            </div>
         )
     };
 
-}
+
 
 export default ProductCards;
 

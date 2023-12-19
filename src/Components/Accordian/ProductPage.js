@@ -1,47 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import Products from './Products';
+import { useSelector } from 'react-redux';
 
 
 
-const useProductPage = () => { 
-    const [product, setProduct] = useState({})
-    const [selectedSize, setSelectedSize] = useState("");
-    const [selectedQuantity, setSelectedQuantity] = useState(1);
-
-    const handleQuanityChange = ({target:{value}}) => {
-        setSelectedQuantity(value);
-    }
-
-    useEffect(() => {
-    Products.then(product => {
-        setProduct(product);
-      });
-    }, [product]);
-
- useEffect(() => {
-    if (product && product.attributes) {
-        const { attributes } = product;
-    setSelectedSize(attributes.sizes[0].name);
-  }
- }, [product, setSelectedSize]);
 
 
-
+using createasyncthunk alone
+const { items, status } = useSelector(state => state.products)
  
- return {
-    product,
-    selectedSize,
-    selectedQuantity,
-    setSelectedSize,
-    handleQuanityChange
-         }
-        
-        }
 
 
 
-export default useProductPage;
 
 
 
@@ -68,4 +36,96 @@ export default useProductPage;
     if(productId) {
         fetchCategories();
     }
- },[productId]);   */  
+ },[productId]);     
+
+ 
+
+
+
+const useProductPage = () => { 
+    const [product, setProduct] = useState({})
+    const [selectedSize, setSelectedSize] = useState("");
+    const [selectedQuantity, setSelectedQuantity] = useState(1);
+
+    const handleQuanityChange = ({target:{value}}) => {
+        setSelectedQuantity(value);
+    }
+
+    useEffect(() => {
+    Products.then(product => {
+        setProduct(product);
+      });
+    }, [product]);
+
+ useEffect(() => {
+    if (product && product.attributes) {
+        const { attributes } = product;
+    setSelectedSize(attributes.sizes[0].name);
+  }
+ }, [product, setSelectedSize]);
+ 
+  return {
+    product,
+    selectedSize,
+    selectedQuantity,
+    setSelectedSize,
+    handleQuanityChange
+         }
+        
+        }
+
+
+
+export default useProductPage;
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+ /*   <FormGroup>
+                                    <FormGroup.Label for="exampleSelect">Selected items</FormGroup.Label>
+                                    <FormGroup.Input
+                                     type="select"
+                                     name="quantity" 
+                                     id="exampleSelect"
+                                     
+                                     >
+                                      <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                      
+                                    </Form Group.Input>
+                                </FormGroup>
+
+{.sizes.map((size) => {
+                                            <span key={size.name} 
+                                                  className={`${selectedSize === size.name ? "active" : ""}`}
+                                                  onClick={() => setSelectedSize(size.name)}
+                                                  >
+
+                                          const {
+        product,
+        selectedSize,
+        selectedQuantity,
+        setSelectedSize,
+        handleQuantityChange,
+         } = useProductPage();
+
+         if (!product || !product.attributes) {
+            return null;
+         }
+         const { attributes } = product;
+
+         const quantity = Array.from(Array(Number(atrributes.quantity)).keys());
+         
+         onChange={handleQuantityChange}*/
