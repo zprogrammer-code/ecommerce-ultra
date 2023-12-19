@@ -114,7 +114,8 @@
 .product-card{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;  
+  margin-bottom: 100px;
   width: 15rem;
 }
 
@@ -123,8 +124,8 @@
 }
 
 .image-zoom{
-   /* padding: 2px;
-   background-color: grey;*/
+    padding: 2px;
+   background-color: grey;
     transition: transform .2s;
     width: 250px;
     height: 250px;
@@ -133,7 +134,7 @@
 
 .product-section{
   padding:30px;
-  margin: 40px;
+  margin: 20px;
 }
 
 .product-details{
@@ -180,3 +181,9 @@
 
 }
 
+.productContainer h2 {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 30px;
+}

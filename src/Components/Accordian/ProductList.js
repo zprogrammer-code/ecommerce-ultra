@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Components/Components.css';
 import { Link  } from 'react-router-dom';
 import { useGetAllProductsQuery } from '../../Features/productsApi';
+import { Button } from 'react-bootstrap';
 
 
 
@@ -35,6 +36,7 @@ const ProductCards = () => {
                     <p>An error occured..</p>
                 ) : (
                     <>
+                    <h2>New Arrivals</h2>
                 <Row xs={6} lg={4} className="product-section g-4 mt-6">
 
                     {data.map((product) => (
@@ -53,6 +55,7 @@ const ProductCards = () => {
                                         </Card.Text>
                                     </Card.Body>
                                     </Link>
+                                    <Button varient="primary">Add To Cart</Button>
                                 </Card>
                             </Container>
                         </Col>
