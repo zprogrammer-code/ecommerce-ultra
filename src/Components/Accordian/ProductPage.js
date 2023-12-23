@@ -1,13 +1,10 @@
+/*
 import { useSelector } from 'react-redux';
-
-
-
-
 
 using createasyncthunk alone
 const { items, status } = useSelector(state => state.products)
  
-
+*/
 
 
 

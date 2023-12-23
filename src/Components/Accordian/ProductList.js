@@ -23,7 +23,7 @@ const ProductCards = () => {
 
         const handleAddToCart = (product) => {
                 
-            dispatch(addToCart(product));
+            dispatch(addToCart(product)); 
         }
     
 

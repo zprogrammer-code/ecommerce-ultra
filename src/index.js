@@ -12,6 +12,8 @@ import { Provider } from "react-redux";
 import productsReducer, { productsFetch } from './Features/productsSlice';
 import { productsApi } from './Features/productsApi';
 import cartReducer from './Features/cartSlice';
+import { ToastContainer } from "react-toastify";
+
 
 const store = configureStore({
   reducer: {
@@ -30,6 +32,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
   <BrowserRouter>
+  <ToastContainer/>
       <Provider store={store}>
         <App/>
       </Provider>
