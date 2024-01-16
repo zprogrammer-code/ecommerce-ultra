@@ -19,7 +19,9 @@ function UltraNavbar() {
           
         <Container>   
        
-               <a href="/home"><h1>ULTRA</h1></a>
+               <a href="/home">
+                <img src="https://res.cloudinary.com/dlnshpfdv/image/upload/v1705386365/imageedit_3_4560604454_t6siy0.png" alt='logo' className='logo'/>
+                </a>
       
                                 <Button href="/Home" className=" custom-row block-example border border-0 border-dark" variant="outline-dark">
                                 
