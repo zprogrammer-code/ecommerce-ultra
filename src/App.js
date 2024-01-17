@@ -13,7 +13,7 @@ import Store from '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/
 import ContactPage from '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Pages/Contact.js';
 import Product from './Pages/Product';
 import ProductView from './Components/Accordian/ProductView';
-import Donate from './Pages/Donate';
+import BlogPage from './Pages/Blog';
 import NotFound from './Components/Notfound';
 
 
@@ -28,7 +28,7 @@ function App(){
             <Route path="/Store" element={<Store/>}/>
             <Route path="/Contact" element={<ContactPage/>}/>
             <Route path="/Product" element={<Product/>}/>
-            <Route path="/Donate" element={<Donate/>}/>
+            <Route path="/Blog" element={<BlogPage/>}/>
             <Route path="/*" element={<NotFound/>}/>
             <Route path='/ProductView/:id' element={<ProductView/>}/>
             

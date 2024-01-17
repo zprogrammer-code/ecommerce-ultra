@@ -12,6 +12,9 @@ function HomePage(){
    return( 
       <> 
       <div className='HomePageContainer'>
+      <div className='logo-box'>
+                    <img src='https://res.cloudinary.com/dlnshpfdv/image/upload/v1705429588/imageedit_7_7124736957_lllwdj.png' alt='logo' className='favicon'/>
+                </div>
       <CovidAlert/>
       <UltraNavbar/>
       <HeroSection/>

@@ -14,15 +14,16 @@ const cartSlice = createSlice({
     initialState,
     reducers:{
         addToCart(state, action){
-
             const itemIndex = state.cartItems.findIndex(
                 (item) => item.id === action.payload.id
                 );
                 if(itemIndex >= 0){
                     state.cartItems[itemIndex].cartQuantity += 1;
-                    toast.info(`increased ${state.cartItems[itemIndex].name} cart quantity`, {
+                    toast.info(`increased ${state.cartItems[itemIndex].name} cart quantity`,
+                     {
                         position: "bottom-left",
-                    });
+                    }
+                    );
                 } else{
                     const tempProduct = {...action.payload, cartQuantity: 1}
                     state.cartItems.push(tempProduct);
@@ -31,7 +32,7 @@ const cartSlice = createSlice({
                     }); 
                 }
 
-                localStorage.setItem("cartItems",  JSON.stringify(state.cartItems))
+                localStorage.setItem("cartItems",  JSON.stringify(state.cartItems));
 
         },
     },

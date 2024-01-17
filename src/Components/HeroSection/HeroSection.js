@@ -11,7 +11,7 @@ function HeroSection() {
         <>  
             <Container className='herosection-content'>
                 <div className='logo-box'>
-                    
+                    <img src='https://res.cloudinary.com/dlnshpfdv/image/upload/v1705429588/imageedit_7_7124736957_lllwdj.png' alt='logo' className='favicon'/>
                 </div>
             <div className= 'text-box'>
             
@@ -19,7 +19,7 @@ function HeroSection() {
                                     <span className='primary-heading'>I love these outfits more every day</span>
                                     <span className='sub-heading'>Our outfits and styles are personally selected by a head female and male stylist</span>
                                 </h1>
-                <a href="Store" class="btn btn-primary">Shop Merch</a>
+                <a href="Store" class="btn btn-primary btn-animated">Shop Merch</a>
             </div>
             
             </Container>

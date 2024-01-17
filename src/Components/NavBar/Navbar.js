@@ -1,8 +1,7 @@
 
 
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import React from 'react';
-import { Navbar, Container, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Components/Components.css";
@@ -15,14 +14,18 @@ function UltraNavbar() {
    
     return(
         <>
-        <Navbar bg='grey' varient='dark' className='navbar-nav'>
+        <nav bg='grey' varient='dark' className='navbar-nav'>
           
-        <Container>   
-       
-               <a href="/home">
-                <img src="https://res.cloudinary.com/dlnshpfdv/image/upload/v1705386365/imageedit_3_4560604454_t6siy0.png" alt='logo' className='logo'/>
-                </a>
-      
+        
+                
+        <div className='logo-box'>
+           <img src='https://res.cloudinary.com/dlnshpfdv/image/upload/v1705429588/imageedit_7_7124736957_lllwdj.png' alt='logo' className='favicon'/>
+         </div>
+              <a href='/Home'>
+              <img src="https://res.cloudinary.com/dlnshpfdv/image/upload/v1705386365/imageedit_3_4560604454_t6siy0.png" alt='logo' className='logo'/>
+              </a>
+               <div className='link-container'>
+              
                                 <Button href="/Home" className=" custom-row block-example border border-0 border-dark" variant="outline-dark">
                                 
                                 <svg 
@@ -38,26 +41,6 @@ function UltraNavbar() {
   Home
                                 </Button>
  
- <Button className=" custom-row block-example border border-0 border-dark" variant="outline-dark">
- <svg 
- xmlns="http://www.w3.org/2000/svg" 
- width="25" 
- height="25" 
- fill="black" 
- class="bi bi-bag-heart-fill" 
- viewBox="0 0 16 16">
-  <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-</svg>
-
-                                <NavDropdown title="/Shop" id=" dropdown collapsible-nav-dropdown" >
-                                        <NavDropdown.Item href="#/action-3">Womens Shoes</NavDropdown.Item>
-                                        <NavDropdown.Item href="#/action-3">fixed/built tech</NavDropdown.Item>
-
-                                        <NavDropdown.Divider/>
-                                        <NavDropdown.Item href="#/action-1">Mens Tops</NavDropdown.Item>
-                                        <NavDropdown.Item href="#/action-3">Mens Shoes</NavDropdown.Item>
-                                </NavDropdown>
-                              </Button>
                                 <Button href="/Store" className=" custom-row block-example border border-0 border-dark" variant="outline-dark">
 
                                 <svg 
@@ -73,7 +56,7 @@ function UltraNavbar() {
 </svg>
                                     Store
                                 </Button>
-                                <Button href="/Donate" className=" custom-row block-example border border-0 border-dark" variant="outline-dark">
+                                <Button href="/Blog" className=" custom-row block-example border border-0 border-dark" variant="outline-dark">
 
     <svg 
     xmlns="http://www.w3.org/2000/svg" 
@@ -84,7 +67,7 @@ function UltraNavbar() {
   <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
   <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
 </svg>
-                                    Donate
+                                    BlogPage
                                 </Button>
                                 <Button href="/Contact" className=" custom-row block-example border border-0 border-dark" variant="outline-dark">
 
@@ -111,14 +94,11 @@ function UltraNavbar() {
                             class="bi bi-cart-fill" 
                             viewBox="0 0 16 16">
                             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                          </svg>
-                            
-                                 
-                            </Button>    
-                          
-                             
-                        </Container>
-        </Navbar>
+                          </svg>     
+                         </Button>    
+                      </div>   
+                       
+        </nav>
         </>
     );
 };
