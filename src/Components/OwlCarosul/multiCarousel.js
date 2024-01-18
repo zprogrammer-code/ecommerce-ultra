@@ -36,7 +36,8 @@ const Products = [
 ]
 
 return(
-<Carousel r  swipeable={false}
+<Carousel  
+  swipeable={false}
   draggable={false}
   showDots={true}
   responsive={responsive}

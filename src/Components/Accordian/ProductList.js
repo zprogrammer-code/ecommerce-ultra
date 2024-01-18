@@ -7,6 +7,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Components/Components.css';
 import { Link  } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { useGetAllProductsQuery } from '../../Features/productsApi';
 import { Button } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
@@ -20,10 +21,11 @@ const ProductCards = () => {
   
         const { data, error, isLoading } = useGetAllProductsQuery();
         const dispatch = useDispatch();
-
+        const history = useNavigate();
         const handleAddToCart = (product) => {
                 
             dispatch(addToCart(product)); 
+            history.push("/cart");
         }
     
 

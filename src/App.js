@@ -3,7 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Route, Routes} from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
   
 import '/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Components/Components.css';
 import 'react-toastify/dist/ReactToastify.css';
@@ -21,8 +21,9 @@ import NotFound from './Components/Notfound';
 function App(){
 
    return( 
-            <>
+           
          <Routes>
+            
             <Route path="/" exact element={<HomePage/>}/>
             <Route path="/Home" element={<HomePage/>}/>
             <Route path="/Store" element={<Store/>}/>
@@ -31,10 +32,10 @@ function App(){
             <Route path="/Blog" element={<BlogPage/>}/>
             <Route path="/*" element={<NotFound/>}/>
             <Route path='/ProductView/:id' element={<ProductView/>}/>
-            
-            </Routes>
+        
+         </Routes>
      
-      </> 
+     
          )};
 
 export default App; 

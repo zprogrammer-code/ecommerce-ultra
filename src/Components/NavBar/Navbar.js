@@ -13,11 +13,18 @@ import "/home/zprogrammercode/React_ecommerce_ultra2/ecommerce-ultra/src/Assets/
 function UltraNavbar() {
    
     return(
-        <>
-        <nav bg='grey' varient='dark' className='navbar-nav'>
-          
-        
-                
+        <header>
+       
+
+          <div className='toggle-btn'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+   
+
+              <nav bg='grey' varient='dark' className='navbar-nav'>
+                             
         <div className='logo-box'>
            <img src='https://res.cloudinary.com/dlnshpfdv/image/upload/v1705429588/imageedit_7_7124736957_lllwdj.png' alt='logo' className='favicon'/>
          </div>
@@ -99,7 +106,7 @@ function UltraNavbar() {
                       </div>   
                        
         </nav>
-        </>
+        </header>
     );
 };
 

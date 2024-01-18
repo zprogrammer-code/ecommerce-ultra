@@ -1,6 +1,18 @@
-body {
 
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  outline: none;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -23,18 +35,7 @@ code {
   --speed: 500ms;
   }
   
-  ul {
-      list-style: none;
-      margin: 150px 0 0 0; 
-      padding: 0;
-  }
-  
-  a {
-      color: var(--text-color);
-      text-decoration: none;
-  }
 
-.btn-custom{
-  background-color: white;
-  color: azure;
-}
+  
+
+
